@@ -37,8 +37,10 @@ public class FrontControllerServletV4 extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
+
         Map<String, String> paramMap = createParamMap(request);
         Map<String, Object> model = new HashMap<>(); //추가
+
         String viewName = controller.process(paramMap, model);
         MyView view = viewResolver(viewName);
         view.render(model, request, response);
