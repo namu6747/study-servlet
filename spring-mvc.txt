@@ -21,3 +21,6 @@ WEB-INF
 현재 URL이 속한 계층 경로 + save가 호출된다.
 현재 계층 경로: /servlet-mvc/members/
 결과: /servlet-mvc/members/save
+
+서블릿과 JSP 동일한 URI 지정시 서블릿이 우선 순위
+
