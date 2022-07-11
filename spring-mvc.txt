@@ -21,6 +21,23 @@ WEB-INF
 현재 URL이 속한 계층 경로 + save가 호출된다.
 현재 계층 경로: /servlet-mvc/members/
 결과: /servlet-mvc/members/save
+실제 개발에선 웬만하면 절대 경로를 이용하자
 
 서블릿과 JSP 동일한 URI 지정시 서블릿이 우선 순위
 
+브라우저에서 href 이동 상대 경로는 url 계층을 참고하면 된다.
+sout 대신 logger를 찍어라
+
+WEB-INF에 jsp를 숨겨두고 forward를 이용해서 페이지를 삽입한다
+클라이언트는 jsp를 절대 직접 호출할 수 없다.
+
+준위가 다른 부분을 함께 개선하려하지 말자
+구조를 개선하려면 구조만 건들여야 한다.
+
+MVC v1에선 다형성을 이용
+요청 응답 객체를 받는 인터페이스와 서블릿 프론트 컨트롤러
+Map에 uri key와 컨트롤러 인스턴스를 저장
+
+v2 에선 view를 분리한다.
+각 컨트롤러에서 forward를 담당하지 않고 viewPath를
+MyView 객체에 주입하여 render를 위임한다.
