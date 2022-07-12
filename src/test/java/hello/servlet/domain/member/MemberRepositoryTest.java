@@ -8,6 +8,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+// Junit 5
 class MemberRepositoryTest {
 
     MemberRepository memberRepository = MemberRepository.getInstance();
@@ -25,7 +26,7 @@ class MemberRepositoryTest {
         Member savedMember = memberRepository.save(member);
         //then
         Member findMember = memberRepository.findById(savedMember.getId());
-        assertThat(findMember).isEqualTo(savedMember);
+        assertThat(findMember).isEqualTo(null);
     }
 
     @Test
