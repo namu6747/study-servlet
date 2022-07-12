@@ -29,7 +29,8 @@ public class FrontControllerServletV3 extends HttpServlet {
     }
 
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response)
+    protected void service(HttpServletRequest request, HttpServletResponse
+            response)
             throws ServletException, IOException {
         String requestURI = request.getRequestURI();
         ControllerV3 controller = controllerMap.get(requestURI);
@@ -37,10 +38,8 @@ public class FrontControllerServletV3 extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
-
         Map<String, String> paramMap = createParamMap(request);
         ModelView mv = controller.process(paramMap);
-
         String viewName = mv.getViewName();
         MyView view = viewResolver(viewName);
         view.render(mv.getModel(), request, response);
@@ -48,7 +47,6 @@ public class FrontControllerServletV3 extends HttpServlet {
 
     private Map<String, String> createParamMap(HttpServletRequest request) {
         Map<String, String> paramMap = new HashMap<>();
-
         request.getParameterNames().asIterator()
                 .forEachRemaining(paramName -> paramMap.put(paramName,
                         request.getParameter(paramName)));
