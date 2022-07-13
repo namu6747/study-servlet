@@ -5,26 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ead835e9-86bf-4cf5-ad4a-3b8cdd464e87" name="Changes" comment="2022-07-11 T21:41:00">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v5/FrontControllerServletV5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v5/MyHandlerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v5/adapter/ControllerV3HandlerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v5/adapter/ControllerV4HandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/old/MyHttpRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/old/OldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/v1/SpringMemberFormControllerV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/v1/SpringMemberListControllerV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/v1/SpringMemberSaveControllerV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/v2/SpringMemberControllerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/springmvc/v3/SpringMemberControllerV3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v1/FrontControllerServletV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v1/FrontControllerServletV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v3/FrontControllerServletV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v3/FrontControllerServletV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v3/controller/MemberFormControllerV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v3/controller/MemberFormControllerV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v4/FrontControllerServletV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/servlet/web/frontcontroller/v4/FrontControllerServletV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/servlet/domain/member/MemberRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/servlet/domain/member/MemberRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,17 +70,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/82105/Desktop/workspace/inflearn/study-servlet",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/82105/Desktop/workspace/inflearn/study-servlet&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -90,7 +89,7 @@
       <recent name="hello.servlet.domain.member" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MemberRepositoryTest.save">
+  <component name="RunManager" selected="Application.hello.servlet.ServletApplication">
     <configuration name="hello.servlet.ServletApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello.servlet.ServletApplication" />
       <module name="servlet.main" />
